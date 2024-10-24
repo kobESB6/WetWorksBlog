@@ -1,13 +1,18 @@
 
-
 const router = require('express').Router();
-const homeRoutes = require('./homeRte');
-const dashBoardRoutes = require('./dashBoardRte');
-const apiRoutes = require('./api');
 
-// Use routes
-router.use('/', homeRoutes);
-router.use('/dashboard', dashBoardRoutes);
-router.use('/api', apiRoutes);
+// Importing routes
+const homePageRoutes = require('./homeRte');  // Corrected based on your structure
+const apiEndpointRoutes = require('./api');
+const dashboardPageRoutes = require('./dashBoardRte');  // Corrected based on your structure
+
+// Use home routes for the root ('/') path
+router.use('/', homePageRoutes);
+
+// Use API routes for '/api' path
+router.use('/api', apiEndpointRoutes);
+
+// Use dashboard routes for '/dashboard' path
+router.use('/dashboard', dashboardPageRoutes);
 
 module.exports = router;
