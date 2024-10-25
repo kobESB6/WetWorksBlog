@@ -1,6 +1,10 @@
 # WetWorksBlog 14
 This is a Tech Blog application built using Node.js, Express, MySQL, and Sequelize. It allows users to sign up, log in, create posts, and comment on other users' posts. The app is built following the MVC (Model-View-Controller) pattern and uses Handlebars.js as the templating engine. The app features user authentication, session management, and a responsive design.
 
+## Resources 
+Tutoring,
+ Xpert learning Assistant 
+
 ## Table of Contents
 
 [Features](#features)
